@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    color: #e3e3e3;
+    background: #000; /* Futuristic black background */
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(145deg, #0f0c29, #302b63, #24243e);
+    text-align: center;
+    padding: 150px 20px;
+    color: #fff;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    color: #0ff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: relative;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 70px #0ff;
+    }
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    margin: 0 15px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #0ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.card {
+    background: linear-gradient(145deg, #1d1d1d, #292929);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.05) rotate(2deg);
+    background: linear-gradient(145deg, #292929, #1d1d1d);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
